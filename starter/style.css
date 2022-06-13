@@ -169,3 +169,23 @@ main {
 .hidden {
   display: none;
 }
+
+.thank-you {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.hivemind {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}

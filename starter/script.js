@@ -7,6 +7,8 @@ const score0El = document.querySelector('#score--0');
 const score1El = document.getElementById('score--1');
 const current0El = document.getElementById('current--0');
 const current1El = document.getElementById('current--1');
+const thankYouEl = document.getElementById('thank--you');
+const hivemindEl = document.getElementById('hivemind');
 
 const diceEl = document.querySelector('.dice');
 const btnNew = document.querySelector('.btn--new');
@@ -28,6 +30,8 @@ const init = function () {
   current1El.textContent = 0;
 
   diceEl.classList.add('hidden');
+  thankYouEl.classList.add('hidden');
+  hivemindEl.classList.remove('hidden');
   player0El.classList.remove('player--winner');
   player1El.classList.remove('player--winner');
   player0El.classList.add('player--active');
@@ -78,8 +82,12 @@ btnHold.addEventListener('click', function () {
       scores[activePlayer];
     // 2. Check if player's score is >= 100
 
-    if (scores[activePlayer] >= 100) {
+    if (scores[activePlayer] >= 10) {
       // Finish the game
+      hivemindEl.classList.add('hidden');
+      // Showing congrats comment
+
+      thankYouEl.classList.remove('hidden');
       document
         .querySelector(`.player--${activePlayer}`)
         .classList.add('player--winner');
@@ -97,3 +105,5 @@ btnHold.addEventListener('click', function () {
 
 // Resetting the game
 btnNew.addEventListener('click', init);
+
+///Breaking it apart and relearning
