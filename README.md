@@ -1,4 +1,5 @@
-# Pig Dice Game
+# ![Pig_Dice_Game_Banner](https://user-images.githubusercontent.com/65255214/173899375-04e531d4-f086-4226-ab83-9de092a7cd45.png)
+
 A dice game made using HTML, CSS and JavaScript.  This project was created to hone my skills using Javascript and DOM manipulation.
 
 Pig Game is a simple dice game which in its basic form is playable with just a single dice. You win by being the first player to score 100 or more points.
